@@ -1,0 +1,38 @@
+//
+//  TopHeaderViewCell.m
+//  KnowingLife
+//
+//  Created by tanyang on 14/10/29.
+//  Copyright (c) 2014年 tany. All rights reserved.
+//
+
+#import "TopHeaderViewCell.h"
+#import "LeeWeatherInfo.h"
+
+@implementation TopHeaderViewCell
+
+- (void)awakeFromNib {
+    // Initialization code
+    self.userInteractionEnabled = YES;
+}
+
+- (void)setWeatherInfo:(LeeWeatherInfo *)weatherInfo
+{
+    LeeWeatherData *weatherData = weatherInfo.weather_data[0];
+    
+    self.cityLabel.text = weatherInfo.currentCity;
+    self.dateLable.text = weatherInfo.date;
+    self.windLable.text = weatherData.wind;
+    self.temperatureLable.text = weatherData.temperature;
+    self.PM25.text = [NSString stringWithFormat:@"PM25: %@",weatherInfo.pm25];
+    NSString *weather = weatherData.weather;
+    NSUInteger strLocation = [weather rangeOfString:@"转"].location;
+    if (strLocation != NSNotFound) {
+        weather = [weather substringToIndex:strLocation];
+    }
+    self.weatherImageView.image = [UIImage imageNamed:weather];
+    self.weatherLable.text = weatherData.weather;
+}
+
+
+@end

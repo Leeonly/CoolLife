@@ -1,0 +1,66 @@
+//
+//  CoolLife-Prefix.pch
+//  CoolLife
+//
+//  Created by Leon on 15/9/20.
+//  Copyright (c) 2015年 Leon. All rights reserved.
+//
+#import <Availability.h>
+#import <UIKit/UIKit.h>
+
+#ifndef CoolLife_CoolLife_Prefix_pch
+#define CoolLife_CoolLife_Prefix_pch
+
+// 获得RGB颜色
+#define LeeColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+// 随机颜色
+#define LeeRandomColor LeeColor(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256))
+// collectionview背景颜色
+#define LeeCollectionBkgCollor LeeColor(231, 231, 231);
+
+// 自定义Logk
+#ifdef DEBUG
+#define LeeLog(...) NSLog(__VA_ARGS__)
+#else
+#define LeeLog(...)
+#endif
+
+#define LeeAppKey @"248582630"
+#define LeeAppSecret @"0b541b1394ed23af3724e9be30c9e372"
+#define LeeRedirectURI @"http://www.baidu.com"
+//#define LeeAppKey @"2142709046"
+//#define LeeAppSecret @"efb8621134921df0a5f8572b397c1b75"
+//#define LeeRedirectURI @"http://www.baidu.com"
+
+
+// 顶部菜单项的宽高
+#define LeeTopMenuItemW 100
+#define LeeTopMenuItemH 44
+
+// 底部菜单项的宽高
+#define LeeBottomMenuItemW 100
+#define LeeBottomMenuItemH 60
+
+// 通知
+// 城市改变的通知
+#define LeeCityChangeNote @"city_change"
+
+// 城市的key
+#define LeeCityKey @"city"
+
+#define AddAllNotes(method) \
+[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(method) name:LeeCityChangeNote object:nil]; \
+[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(method) name:LeeCategoryChangeNote object:nil]; \
+[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(method) name:LeeDistrictChangeNote object:nil]; \
+[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(method) name:LeeOrderChangeNote object:nil];
+
+
+// 4.全局背景色
+#define LeeGlobalBg [UIColor colorWithPatternImage:[UIImage imageNamed:@"bg_deal.png"]]
+
+
+// 5.默认的动画时间
+#define LeeDefaultAnimDuration 0.3
+
+#endif
+

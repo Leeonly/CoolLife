@@ -7,16 +7,22 @@
 //
 
 #import "AppDelegate.h"
+#import "LeeTabBarController.h"
+#import "SDWebImageManager.h"
 
-@interface AppDelegate ()
-
-@end
 
 @implementation AppDelegate
 
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+
+    self.window.rootViewController = [[LeeTabBarController alloc] init];
+
     return YES;
 }
 
@@ -40,6 +46,15 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+// 收到内存警告
+- (void)applicationDidReceiveMemoryWarning:(UIApplication *)application
+{
+    // 停止下载图片
+    [[SDWebImageManager sharedManager] cancelAll];
+    
+    // 清除内存缓存图片
+    [[SDWebImageManager sharedManager].imageCache clearMemory];
 }
 
 @end
