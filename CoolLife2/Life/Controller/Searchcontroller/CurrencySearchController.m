@@ -17,6 +17,7 @@
 @property (nonatomic, strong) RETableViewManager *manager;
 @property (nonatomic, strong) NSArray *currencyArray;
 @property (nonatomic, strong) RETextItem *numberItem;
+
 @property (nonatomic, strong) RERadioItem *swapOut;
 @property (nonatomic, strong) RERadioItem *swapIn;
 @property (nonatomic, strong) RETableViewSection *resultSection;
@@ -153,7 +154,7 @@
             //            NSString *money = [NSString stringWithFormat:@"%.4f",toNumber];[weakSelf changeFloat:money]
             //            [weakSelf.resultSection addItem:[WBSubtitleItem itemWithTitle:<#(NSString *)#>]
             
-            [weakSelf.resultSection addItem:[WBSubtitleItem itemWithTitle:dic[@"toCurrency"] rightSubtitle:dic[@"convertedamount"]]];
+            [weakSelf.resultSection addItem:[WBSubtitleItem itemWithTitle:@"兑换金额" rightSubtitle:dic[@"convertedamount"]]];
             
             // 当前汇率更新日期
             [weakSelf.resultSection addItem:[WBSubtitleItem itemWithTitle:@"汇率更新日期" rightSubtitle:dic[@"date"]]];

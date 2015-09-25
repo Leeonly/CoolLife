@@ -11,7 +11,7 @@
 #import "LeeTabBar.h"
 #import "LeeNavigationController.h"
 #import "LeeMoreViewController.h"
-#import "LeeNewsViewController.h"
+#import "LeeNewsMenuController.h"
 #import "ProductController.h"
 #import "LeeGroupBuyController.h"
 #import "TestViewController.h"
@@ -96,7 +96,8 @@
     self.life = life;
     
     // 新闻控制器
-    LeeNewsViewController *news = [[LeeNewsViewController alloc]init];
+
+    LeeNewsMenuController*news = [[LeeNewsMenuController alloc]init];
     //msg.tabBarItem.badgeValue = @"30";
     [self addChildVc:news title:@"新闻" image:@"tabbar_message_center" selectedImage:@"tabbar_message_center_selected"];
     

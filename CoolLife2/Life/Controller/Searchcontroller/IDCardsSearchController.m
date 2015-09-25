@@ -120,6 +120,7 @@
     __typeof (self) __weak weakSelf = self;
     
     [LeeSearchHttpTool getIDCardData:IDCard success:^(NSData *data) {
+        
         NSMutableDictionary *dataDict = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableLeaves error:nil];
         NSMutableDictionary *dic = [dataDict objectForKey:@"retData"];
         NSNumber *error = dataDict[@"errNum"];

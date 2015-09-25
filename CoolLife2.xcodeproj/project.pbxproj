@@ -56,6 +56,11 @@
 		35540E2E1BB11C20003F8D5E /* REPresenceValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 35540E261BB11C20003F8D5E /* REPresenceValidator.m */; };
 		35540E2F1BB11C20003F8D5E /* REURLValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 35540E281BB11C20003F8D5E /* REURLValidator.m */; };
 		35540EBA1BB13D6F003F8D5E /* LeeGroupBuyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35540EB91BB13D6F003F8D5E /* LeeGroupBuyController.m */; };
+		3579A8591BB41E3200120F46 /* QRItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3579A8541BB41E3200120F46 /* QRItem.m */; };
+		3579A85A1BB41E3200120F46 /* QRMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 3579A8561BB41E3200120F46 /* QRMenu.m */; };
+		3579A85B1BB41E3200120F46 /* QRView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3579A8581BB41E3200120F46 /* QRView.m */; };
+		3579A85E1BB41ECA00120F46 /* QRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3579A85D1BB41ECA00120F46 /* QRViewController.m */; };
+		3579A8621BB42BE700120F46 /* LeeLotteryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3579A8611BB42BE700120F46 /* LeeLotteryViewController.m */; };
 		357B896B1BAFA3D900A62449 /* UIWindow+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 357B896A1BAFA3D900A62449 /* UIWindow+Extension.m */; };
 		357B89711BAFA5B900A62449 /* UIImage+Lee.m in Sources */ = {isa = PBXBuildFile; fileRef = 357B89701BAFA5B900A62449 /* UIImage+Lee.m */; };
 		357B89741BAFA64900A62449 /* NSDate+Lee.m in Sources */ = {isa = PBXBuildFile; fileRef = 357B89731BAFA64900A62449 /* NSDate+Lee.m */; };
@@ -96,7 +101,6 @@
 		357B8C261BAFBDD400A62449 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 357B8C251BAFBDD400A62449 /* Foundation+Log.m */; };
 		357B8C331BAFCBF400A62449 /* LeeNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 357B8C321BAFCBF400A62449 /* LeeNewsViewController.m */; };
 		357B8C3D1BAFCDBE00A62449 /* LeeMoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 357B8C3C1BAFCDBE00A62449 /* LeeMoreViewController.m */; };
-		357B8C401BAFCDF500A62449 /* LeeLotteryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 357B8C3F1BAFCDF500A62449 /* LeeLotteryViewController.m */; };
 		357FA8A41BB16180009C239C /* LeeHttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 357FA89E1BB16180009C239C /* LeeHttpTool.m */; };
 		357FA8A51BB16180009C239C /* LeeLocationTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 357FA8A01BB16180009C239C /* LeeLocationTool.m */; };
 		357FA8DD1BB161B5009C239C /* ExpendTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 357FA8AA1BB161B5009C239C /* ExpendTableView.m */; };
@@ -173,6 +177,15 @@
 		35F06A8F1BAED6ED00218BA8 /* NSObject+MJMember.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F06A801BAED6ED00218BA8 /* NSObject+MJMember.m */; };
 		35F06AC51BAED70400218BA8 /* NSString+RENumberFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F06AB31BAED70400218BA8 /* NSString+RENumberFormat.m */; };
 		35F06AC61BAED70400218BA8 /* REFormattedNumberField.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F06AB51BAED70400218BA8 /* REFormattedNumberField.m */; };
+		35F201C31BB4FA4F00408511 /* LeeNewsMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F201C21BB4FA4F00408511 /* LeeNewsMenuController.m */; };
+		35F201E91BB5134600408511 /* RETableViewManager.bundle in Frameworks */ = {isa = PBXBuildFile; fileRef = 35540DEA1BB1126A003F8D5E /* RETableViewManager.bundle */; };
+		35F201F31BB5147700408511 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35F201F21BB5147700408511 /* CoreLocation.framework */; };
+		35F201F51BB5148100408511 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35F201F41BB5148100408511 /* MapKit.framework */; };
+		35F201F71BB5148A00408511 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35F201F61BB5148A00408511 /* MessageUI.framework */; };
+		35F202041BB515B200408511 /* REMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F201FC1BB515B200408511 /* REMenu.m */; };
+		35F202051BB515B200408511 /* REMenuContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F201FE1BB515B200408511 /* REMenuContainerView.m */; };
+		35F202061BB515B200408511 /* REMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F202001BB515B200408511 /* REMenuItem.m */; };
+		35F202071BB515B200408511 /* REMenuItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F202021BB515B200408511 /* REMenuItemView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -283,6 +296,16 @@
 		35540E281BB11C20003F8D5E /* REURLValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REURLValidator.m; sourceTree = "<group>"; };
 		35540EB81BB13D6F003F8D5E /* LeeGroupBuyController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeeGroupBuyController.h; sourceTree = "<group>"; };
 		35540EB91BB13D6F003F8D5E /* LeeGroupBuyController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeeGroupBuyController.m; sourceTree = "<group>"; };
+		3579A8531BB41E3200120F46 /* QRItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRItem.h; sourceTree = "<group>"; };
+		3579A8541BB41E3200120F46 /* QRItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRItem.m; sourceTree = "<group>"; };
+		3579A8551BB41E3200120F46 /* QRMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRMenu.h; sourceTree = "<group>"; };
+		3579A8561BB41E3200120F46 /* QRMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRMenu.m; sourceTree = "<group>"; };
+		3579A8571BB41E3200120F46 /* QRView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRView.h; sourceTree = "<group>"; };
+		3579A8581BB41E3200120F46 /* QRView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRView.m; sourceTree = "<group>"; };
+		3579A85C1BB41ECA00120F46 /* QRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRViewController.h; sourceTree = "<group>"; };
+		3579A85D1BB41ECA00120F46 /* QRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRViewController.m; sourceTree = "<group>"; };
+		3579A8601BB42BE700120F46 /* LeeLotteryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeeLotteryViewController.h; sourceTree = "<group>"; };
+		3579A8611BB42BE700120F46 /* LeeLotteryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeeLotteryViewController.m; sourceTree = "<group>"; };
 		357B89691BAFA3D900A62449 /* UIWindow+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+Extension.h"; sourceTree = "<group>"; };
 		357B896A1BAFA3D900A62449 /* UIWindow+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+Extension.m"; sourceTree = "<group>"; };
 		357B896F1BAFA5B900A62449 /* UIImage+Lee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Lee.h"; sourceTree = "<group>"; };
@@ -362,8 +385,6 @@
 		357B8C321BAFCBF400A62449 /* LeeNewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeeNewsViewController.m; sourceTree = "<group>"; };
 		357B8C3B1BAFCDBE00A62449 /* LeeMoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeeMoreViewController.h; sourceTree = "<group>"; };
 		357B8C3C1BAFCDBE00A62449 /* LeeMoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeeMoreViewController.m; sourceTree = "<group>"; };
-		357B8C3E1BAFCDF500A62449 /* LeeLotteryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeeLotteryViewController.h; sourceTree = "<group>"; };
-		357B8C3F1BAFCDF500A62449 /* LeeLotteryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeeLotteryViewController.m; sourceTree = "<group>"; };
 		357FA89D1BB16180009C239C /* LeeHttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeeHttpTool.h; sourceTree = "<group>"; };
 		357FA89E1BB16180009C239C /* LeeHttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeeHttpTool.m; sourceTree = "<group>"; };
 		357FA89F1BB16180009C239C /* LeeLocationTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeeLocationTool.h; sourceTree = "<group>"; };
@@ -443,7 +464,6 @@
 		3582DB3F1BAED3850084DE84 /* CoolLife-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CoolLife-Prefix.pch"; sourceTree = "<group>"; };
 		35EEB8EE1BB3C44500D1B643 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		35EEB8EF1BB3C44500D1B643 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
-		35EEB8F11BB3C8A500D1B643 /* KLComment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KLComment.h; sourceTree = "<group>"; };
 		35F06A1B1BAED60800218BA8 /* CSStickyHeaderFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSStickyHeaderFlowLayout.h; sourceTree = "<group>"; };
 		35F06A1C1BAED60800218BA8 /* CSStickyHeaderFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSStickyHeaderFlowLayout.m; sourceTree = "<group>"; };
 		35F06A1D1BAED60800218BA8 /* CSStickyHeaderFlowLayoutAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSStickyHeaderFlowLayoutAttributes.h; sourceTree = "<group>"; };
@@ -510,6 +530,19 @@
 		35F06AB31BAED70400218BA8 /* NSString+RENumberFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+RENumberFormat.m"; sourceTree = "<group>"; };
 		35F06AB41BAED70400218BA8 /* REFormattedNumberField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REFormattedNumberField.h; sourceTree = "<group>"; };
 		35F06AB51BAED70400218BA8 /* REFormattedNumberField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REFormattedNumberField.m; sourceTree = "<group>"; };
+		35F201C11BB4FA4F00408511 /* LeeNewsMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeeNewsMenuController.h; sourceTree = "<group>"; };
+		35F201C21BB4FA4F00408511 /* LeeNewsMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeeNewsMenuController.m; sourceTree = "<group>"; };
+		35F201F21BB5147700408511 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		35F201F41BB5148100408511 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		35F201F61BB5148A00408511 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		35F201FB1BB515B200408511 /* REMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REMenu.h; sourceTree = "<group>"; };
+		35F201FC1BB515B200408511 /* REMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REMenu.m; sourceTree = "<group>"; };
+		35F201FD1BB515B200408511 /* REMenuContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REMenuContainerView.h; sourceTree = "<group>"; };
+		35F201FE1BB515B200408511 /* REMenuContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REMenuContainerView.m; sourceTree = "<group>"; };
+		35F201FF1BB515B200408511 /* REMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REMenuItem.h; sourceTree = "<group>"; };
+		35F202001BB515B200408511 /* REMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REMenuItem.m; sourceTree = "<group>"; };
+		35F202011BB515B200408511 /* REMenuItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REMenuItemView.h; sourceTree = "<group>"; };
+		35F202021BB515B200408511 /* REMenuItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REMenuItemView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -517,6 +550,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35F201F71BB5148A00408511 /* MessageUI.framework in Frameworks */,
+				35F201F51BB5148100408511 /* MapKit.framework in Frameworks */,
+				35F201F31BB5147700408511 /* CoreLocation.framework in Frameworks */,
+				35F201E91BB5134600408511 /* RETableViewManager.bundle in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -680,6 +717,28 @@
 			path = GroupBuy;
 			sourceTree = "<group>";
 		};
+		3579A8521BB41E3200120F46 /* QRView */ = {
+			isa = PBXGroup;
+			children = (
+				3579A8531BB41E3200120F46 /* QRItem.h */,
+				3579A8541BB41E3200120F46 /* QRItem.m */,
+				3579A8551BB41E3200120F46 /* QRMenu.h */,
+				3579A8561BB41E3200120F46 /* QRMenu.m */,
+				3579A8571BB41E3200120F46 /* QRView.h */,
+				3579A8581BB41E3200120F46 /* QRView.m */,
+			);
+			path = QRView;
+			sourceTree = "<group>";
+		};
+		3579A85F1BB42BE700120F46 /* Lottery */ = {
+			isa = PBXGroup;
+			children = (
+				3579A8601BB42BE700120F46 /* LeeLotteryViewController.h */,
+				3579A8611BB42BE700120F46 /* LeeLotteryViewController.m */,
+			);
+			path = Lottery;
+			sourceTree = "<group>";
+		};
 		357B89781BAFB09000A62449 /* DOPDropDownMenu */ = {
 			isa = PBXGroup;
 			children = (
@@ -827,7 +886,6 @@
 				357FA89E1BB16180009C239C /* LeeHttpTool.m */,
 				357FA89F1BB16180009C239C /* LeeLocationTool.h */,
 				357FA8A01BB16180009C239C /* LeeLocationTool.m */,
-				35EEB8F11BB3C8A500D1B643 /* KLComment.h */,
 				357FA8A11BB16180009C239C /* Singleton.h */,
 			);
 			path = Tool;
@@ -836,6 +894,7 @@
 		357FA8A61BB161B5009C239C /* Life */ = {
 			isa = PBXGroup;
 			children = (
+				3579A85F1BB42BE700120F46 /* Lottery */,
 				357FA8A71BB161B5009C239C /* Controller */,
 				357FA8C31BB161B5009C239C /* Model */,
 				357FA8CA1BB161B5009C239C /* Tool */,
@@ -850,6 +909,8 @@
 				357FA8A81BB161B5009C239C /* CaculateController */,
 				357FA8B11BB161B5009C239C /* CitysViewController.h */,
 				357FA8B21BB161B5009C239C /* CitysViewController.m */,
+				3579A85C1BB41ECA00120F46 /* QRViewController.h */,
+				3579A85D1BB41ECA00120F46 /* QRViewController.m */,
 				357FA8B31BB161B5009C239C /* ProductController.h */,
 				357FA8B41BB161B5009C239C /* ProductController.m */,
 				357FA8B51BB161B5009C239C /* Searchcontroller */,
@@ -978,6 +1039,9 @@
 		3582DAFB1BAED1BB0084DE84 = {
 			isa = PBXGroup;
 			children = (
+				35F201F61BB5148A00408511 /* MessageUI.framework */,
+				35F201F41BB5148100408511 /* MapKit.framework */,
+				35F201F21BB5147700408511 /* CoreLocation.framework */,
 				3582DB061BAED1BB0084DE84 /* CoolLife2 */,
 				3582DB201BAED1BB0084DE84 /* CoolLife2Tests */,
 				3582DB051BAED1BB0084DE84 /* Products */,
@@ -1000,7 +1064,6 @@
 				357FA8A61BB161B5009C239C /* Life */,
 				35540EB71BB13D6F003F8D5E /* GroupBuy */,
 				3582DB401BAED3BE0084DE84 /* Extention */,
-				3582DB2E1BAED36B0084DE84 /* Lottery */,
 				3582DB301BAED36B0084DE84 /* More */,
 				3582DB311BAED36B0084DE84 /* News */,
 				3582DB321BAED36B0084DE84 /* Resource */,
@@ -1039,15 +1102,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		3582DB2E1BAED36B0084DE84 /* Lottery */ = {
-			isa = PBXGroup;
-			children = (
-				357B8C3E1BAFCDF500A62449 /* LeeLotteryViewController.h */,
-				357B8C3F1BAFCDF500A62449 /* LeeLotteryViewController.m */,
-			);
-			path = Lottery;
-			sourceTree = "<group>";
-		};
 		3582DB301BAED36B0084DE84 /* More */ = {
 			isa = PBXGroup;
 			children = (
@@ -1062,6 +1116,8 @@
 			children = (
 				357B8C311BAFCBF400A62449 /* LeeNewsViewController.h */,
 				357B8C321BAFCBF400A62449 /* LeeNewsViewController.m */,
+				35F201C11BB4FA4F00408511 /* LeeNewsMenuController.h */,
+				35F201C21BB4FA4F00408511 /* LeeNewsMenuController.m */,
 			);
 			path = News;
 			sourceTree = "<group>";
@@ -1092,6 +1148,8 @@
 		35F06A051BAED5EB00218BA8 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				35F201F81BB515B200408511 /* REMenu */,
+				3579A8521BB41E3200120F46 /* QRView */,
 				35540E191BB11C20003F8D5E /* REValidation */,
 				35540D9E1BB1126A003F8D5E /* RETableViewManager */,
 				357B89A21BAFB1C200A62449 /* MJRefresh */,
@@ -1228,6 +1286,21 @@
 			path = Category;
 			sourceTree = "<group>";
 		};
+		35F201F81BB515B200408511 /* REMenu */ = {
+			isa = PBXGroup;
+			children = (
+				35F201FB1BB515B200408511 /* REMenu.h */,
+				35F201FC1BB515B200408511 /* REMenu.m */,
+				35F201FD1BB515B200408511 /* REMenuContainerView.h */,
+				35F201FE1BB515B200408511 /* REMenuContainerView.m */,
+				35F201FF1BB515B200408511 /* REMenuItem.h */,
+				35F202001BB515B200408511 /* REMenuItem.m */,
+				35F202011BB515B200408511 /* REMenuItemView.h */,
+				35F202021BB515B200408511 /* REMenuItemView.m */,
+			);
+			path = REMenu;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1354,8 +1427,10 @@
 				357FA8F01BB161B5009C239C /* LeeWeatherViewController.m in Sources */,
 				35540E161BB1126A003F8D5E /* RETableViewManager.m in Sources */,
 				357B8C241BAFBD9600A62449 /* UIBarButtonItem+Extension.m in Sources */,
+				35F202051BB515B200408511 /* REMenuContainerView.m in Sources */,
 				35540E141BB1126A003F8D5E /* RETableViewItem.m in Sources */,
 				35540EBA1BB13D6F003F8D5E /* LeeGroupBuyController.m in Sources */,
+				3579A85E1BB41ECA00120F46 /* QRViewController.m in Sources */,
 				357B89931BAFB0B700A62449 /* AFNetworkReachabilityManager.m in Sources */,
 				35540DF41BB1126A003F8D5E /* RETableViewFloatCell.m in Sources */,
 				357B89961BAFB0B700A62449 /* AFURLRequestSerialization.m in Sources */,
@@ -1373,6 +1448,7 @@
 				357FA8DF1BB161B5009C239C /* FangResultViewController.m in Sources */,
 				35F06A2C1BAED60800218BA8 /* CSStickyHeaderFlowLayoutAttributes.m in Sources */,
 				357FA9061BB16304009C239C /* LeeNavigationController.m in Sources */,
+				3579A8621BB42BE700120F46 /* LeeLotteryViewController.m in Sources */,
 				35540DF51BB1126A003F8D5E /* RETableViewInlineDatePickerCell.m in Sources */,
 				35F06A8A1BAED6ED00218BA8 /* MJMethod.m in Sources */,
 				35540E061BB1126A003F8D5E /* REInlinePickerItem.m in Sources */,
@@ -1385,7 +1461,6 @@
 				357B89DB1BAFB1C200A62449 /* MJRefreshNormalHeader.m in Sources */,
 				35540DFA1BB1126A003F8D5E /* RETableViewPickerCell.m in Sources */,
 				357B89711BAFA5B900A62449 /* UIImage+Lee.m in Sources */,
-				357B8C401BAFCDF500A62449 /* LeeLotteryViewController.m in Sources */,
 				357B896B1BAFA3D900A62449 /* UIWindow+Extension.m in Sources */,
 				357FA8E81BB161B5009C239C /* WeatherViewController.m in Sources */,
 				35F06A881BAED6ED00218BA8 /* MJIvar.m in Sources */,
@@ -1403,6 +1478,7 @@
 				357B89D51BAFB1C200A62449 /* MJRefreshAutoNormalFooter.m in Sources */,
 				35F06A8F1BAED6ED00218BA8 /* NSObject+MJMember.m in Sources */,
 				35540E101BB1126A003F8D5E /* RECommonFunctions.m in Sources */,
+				35F202061BB515B200408511 /* REMenuItem.m in Sources */,
 				357B8C261BAFBDD400A62449 /* Foundation+Log.m in Sources */,
 				357FA9071BB16304009C239C /* LeeTabBarController.m in Sources */,
 				357FA8E31BB161B5009C239C /* CurrencySearchController.m in Sources */,
@@ -1410,6 +1486,7 @@
 				357FA8EB1BB161B5009C239C /* ProductItem.m in Sources */,
 				35540DF11BB1126A003F8D5E /* RETableViewBoolCell.m in Sources */,
 				357FA8EC1BB161B5009C239C /* ProductSection.m in Sources */,
+				3579A8591BB41E3200120F46 /* QRItem.m in Sources */,
 				35F06A571BAED68D00218BA8 /* SDWebImageManager.m in Sources */,
 				35F06A541BAED68D00218BA8 /* SDWebImageDecoder.m in Sources */,
 				35F06A891BAED6ED00218BA8 /* MJMember.m in Sources */,
@@ -1419,6 +1496,7 @@
 				35540E2C1BB11C20003F8D5E /* REEmailValidator.m in Sources */,
 				35540E2B1BB11C20003F8D5E /* REValidator.m in Sources */,
 				35540E171BB1126A003F8D5E /* RETableViewOptionsController.m in Sources */,
+				35F201C31BB4FA4F00408511 /* LeeNewsMenuController.m in Sources */,
 				35540DFC1BB1126A003F8D5E /* RETableViewTextCell.m in Sources */,
 				357B89E11BAFB1C200A62449 /* UIView+MJExtension.m in Sources */,
 				35540E2F1BB11C20003F8D5E /* REURLValidator.m in Sources */,
@@ -1437,6 +1515,7 @@
 				357FA8ED1BB161B5009C239C /* LeeSearchHttpTool.m in Sources */,
 				357B89771BAFA7E900A62449 /* UIView+Extension.m in Sources */,
 				35540DFE1BB1126A003F8D5E /* MultilineTextItem.m in Sources */,
+				35F202071BB515B200408511 /* REMenuItemView.m in Sources */,
 				35540E031BB1126A003F8D5E /* REDateTimeItem.m in Sources */,
 				35F06A8C1BAED6ED00218BA8 /* MJTypeEncoding.m in Sources */,
 				357B89981BAFB0B700A62449 /* AFURLSessionManager.m in Sources */,
@@ -1476,7 +1555,9 @@
 				35F06A5D1BAED68D00218BA8 /* UIImageView+HighlightedWebCache.m in Sources */,
 				35540E0D1BB1126A003F8D5E /* RETextItem.m in Sources */,
 				35540E051BB1126A003F8D5E /* REInlineDatePickerItem.m in Sources */,
+				35F202041BB515B200408511 /* REMenu.m in Sources */,
 				35540DF61BB1126A003F8D5E /* RETableViewInlinePickerCell.m in Sources */,
+				3579A85A1BB41E3200120F46 /* QRMenu.m in Sources */,
 				357FA8E01BB161B5009C239C /* RevenueController.m in Sources */,
 				35540E0B1BB1126A003F8D5E /* RERadioItem.m in Sources */,
 				357B89D21BAFB1C200A62449 /* MJRefreshFooter.m in Sources */,
@@ -1484,6 +1565,7 @@
 				357FA8E11BB161B5009C239C /* CitysViewController.m in Sources */,
 				357FA8EE1BB161B5009C239C /* HeaderViewCell.m in Sources */,
 				35F06A5A1BAED68D00218BA8 /* UIImage+GIF.m in Sources */,
+				3579A85B1BB41E3200120F46 /* QRView.m in Sources */,
 				357B89D31BAFB1C200A62449 /* MJRefreshHeader.m in Sources */,
 				357B89DC1BAFB1C200A62449 /* MJRefreshStateHeader.m in Sources */,
 				35F06A521BAED68D00218BA8 /* SDImageCache.m in Sources */,

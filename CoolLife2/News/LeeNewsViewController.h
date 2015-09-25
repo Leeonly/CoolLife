@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LeeNewsViewController : UITableViewController
-//@property (nonatomic, strong)  <#name#>;
+@interface LeeNewsViewController : UIViewController
+@property (nonatomic, copy) NSString *url;
 @end
