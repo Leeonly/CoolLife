@@ -24,13 +24,13 @@
                                        queue: [NSOperationQueue mainQueue]
                            completionHandler: ^(NSURLResponse *response, NSData *data, NSError *error){
                                if (error) {
-                                   NSLog(@"Httperror: %@%ld", error.localizedDescription, error.code);
+                                   LeeLog(@"Httperror: %@%ld", error.localizedDescription, error.code);
 //                                   error(failure);
                                } else {
                                    NSInteger responseCode = [(NSHTTPURLResponse *)response statusCode];
                                    NSString *responseString = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-                                   NSLog(@"HttpResponseCode:%ld", responseCode);
-                                   NSLog(@"HttpResponseBody %@",responseString);
+                                   LeeLog(@"HttpResponseCode:%ld", responseCode);
+                                   LeeLog(@"HttpResponseBody %@",responseString);
                                    success(data);
                                }
                            }];

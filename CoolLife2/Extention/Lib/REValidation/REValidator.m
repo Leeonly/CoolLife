@@ -24,7 +24,6 @@
 //
 
 #import "REValidator.h"
-
 @interface REValidator ()
 
 @property (strong, readwrite, nonatomic) NSDictionary *parameters;

@@ -29,7 +29,7 @@
     } failure:^(NSError *error) {
         if (failure) {
             failure(error);
-            NSLog(@"%@",error);
+            LeeLog(@"%@",error);
         }
     }];
 }
@@ -106,7 +106,7 @@
     } failure:^(NSError *error) {
         if (failure) {
             failure(error);
-            NSLog(@"%@",error);
+            LeeLog(@"%@",error);
         }
     }];
 }

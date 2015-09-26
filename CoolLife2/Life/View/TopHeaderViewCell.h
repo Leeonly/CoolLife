@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@class KLWeatherInfo;
+@class LeeWeatherInfo;
 @interface TopHeaderViewCell : UICollectionViewCell
 @property (weak, nonatomic) IBOutlet UILabel *cityLabel;
 @property (weak, nonatomic) IBOutlet UILabel *dateLable;
@@ -18,5 +18,5 @@
 @property (weak, nonatomic) IBOutlet UIImageView *weatherImageView;
 @property (weak, nonatomic) IBOutlet UILabel *weatherLable;
 
-@property (nonatomic, strong) KLWeatherInfo *weatherInfo;
+@property (nonatomic, strong) LeeWeatherInfo *weatherInfo;
 @end

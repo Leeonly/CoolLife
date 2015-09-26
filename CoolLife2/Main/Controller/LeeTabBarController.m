@@ -11,7 +11,7 @@
 #import "LeeTabBar.h"
 #import "LeeNavigationController.h"
 #import "LeeMoreViewController.h"
-#import "LeeNewsViewController.h"
+#import "LeeNewsMenuController.h"
 #import "ProductController.h"
 #import "LeeGroupBuyController.h"
 #import "TestViewController.h"
@@ -87,8 +87,8 @@
     // 设置垂直间距
     layout.minimumLineSpacing = 10;
     layout.sectionInset = UIEdgeInsetsMake(10, 0, 0, 0);
-    layout.parallaxHeaderReferenceSize = CGSizeMake(self.view.frame.size.width, 170);
-    layout.headerReferenceSize = CGSizeMake(200, 50);
+    layout.parallaxHeaderReferenceSize = CGSizeMake(self.view.frame.size.width, 35);
+    layout.headerReferenceSize = CGSizeMake(200, 30);
     
     ProductController *life = [[ProductController alloc] initWithCollectionViewLayout:layout];
 //    ProductCollectionController *life = [[ProductCollectionController alloc]initWithCollectionViewLayout:layout];
@@ -96,7 +96,8 @@
     self.life = life;
     
     // 新闻控制器
-    LeeNewsViewController *news = [[LeeNewsViewController alloc]init];
+
+    LeeNewsMenuController*news = [[LeeNewsMenuController alloc]init];
     //msg.tabBarItem.badgeValue = @"30";
     [self addChildVc:news title:@"新闻" image:@"tabbar_message_center" selectedImage:@"tabbar_message_center_selected"];
     
@@ -104,7 +105,7 @@
 //    LeeGroupBuyController *discover = [[LeeGroupBuyController alloc] init];
 
     TestViewController *discover = [[TestViewController alloc] init];
-    [self addChildVc:discover title:@"团购" image:@"tabbar_discover" selectedImage:@"tabbar_discover_selected"];
+    [self addChildVc:discover title:@"周边" image:@"tabbar_discover" selectedImage:@"tabbar_discover_selected"];
     
     // 更多控制器
     LeeMoreViewController *more = [[LeeMoreViewController alloc] init];

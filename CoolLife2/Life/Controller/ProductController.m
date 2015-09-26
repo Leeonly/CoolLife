@@ -12,6 +12,7 @@
 #import "LeeWeatherInfo.h"
 #import "MJExtension.h"
 #import "CitysViewController.h"
+#import "QRViewController.h"
 
 #import "WeatherViewController.h"
 #import "IDCardsSearchController.h"
@@ -55,6 +56,8 @@ static NSString * const reuseTopHeaderIdentifier = @"TopHeaderViewCell";
     [self registerCells];
     
     self.collectionView.backgroundColor = LeeCollectionBkgCollor;//LeeColor(231, 231, 231);
+    
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithTarget:self action:@selector(secondCode) image:@"navigationbar_pop" highImage:nil];
     
     self.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithTarget:self action:@selector(selectCity) image:@"ios7_top_navigation_locationicon" highImage:nil];
     
@@ -102,6 +105,33 @@ static NSString * const reuseTopHeaderIdentifier = @"TopHeaderViewCell";
     [self.collectionView registerNib:nib forSupplementaryViewOfKind:CSStickyHeaderParallaxHeader withReuseIdentifier:reuseTopHeaderIdentifier];
 }
 
+#pragma mark 二维码
+- (void)secondCode
+{
+    if ([self validateCamera]) {
+        
+        [self showQRViewController];
+        
+    } else {
+        
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"提示" message:@"没有摄像头或摄像头不可用" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+        [alertView show];
+    }
+}
+
+- (BOOL)validateCamera {
+    
+    return [UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera] &&
+    [UIImagePickerController isCameraDeviceAvailable:UIImagePickerControllerCameraDeviceRear];
+}
+
+- (void)showQRViewController {
+    
+    QRViewController *qrVC = [[QRViewController alloc] init];
+    [self.navigationController pushViewController:qrVC animated:YES];
+}
+
+
 #pragma mark 收到定位城市通知
 - (void)locationCity
 {
@@ -119,6 +149,7 @@ static NSString * const reuseTopHeaderIdentifier = @"TopHeaderViewCell";
         NSArray *weatherInfo = [LeeWeatherInfo objectArrayWithKeyValuesArray:json[@"results"]];
         //NSLog(@"%@",weatherInfo);
         _weatherInfo = weatherInfo[0];
+        LeeLog(@"----------------%@",_weatherInfo);
         
         //实例化一个NSDateFormatter对象
         NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
@@ -131,7 +162,7 @@ static NSString * const reuseTopHeaderIdentifier = @"TopHeaderViewCell";
         // 设置weatherView
         self.weatherCell.weatherInfo = _weatherInfo;
     } failure:^(NSError *error) {
-        NSLog(@"加载天气失败!");
+        LeeLog(@"加载天气失败!");
     }];
     
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
@@ -159,7 +190,7 @@ static NSString * const reuseTopHeaderIdentifier = @"TopHeaderViewCell";
 {
     // 添加section
     ProductSection *section = [ProductSection section];
-    section.headerTitle = @"生活查询";
+    section.headerTitle = @"常用查询";
     
     // 添加items
     ProductItem *IDCardItem = [ProductItem itemWithTitle:@"身份证查询" icon:@"s3" destVcClass:[IDCardsSearchController class]];
@@ -187,7 +218,7 @@ static NSString * const reuseTopHeaderIdentifier = @"TopHeaderViewCell";
 - (void)addSectionTicket
 {
     ProductSection *section = [ProductSection section];
-    section.headerTitle = @"彩票开奖";
+    section.headerTitle = @"彩票";
     ProductItem *item0 = [ProductItem itemWithTitle:@"网易彩票" icon:@"a2" destVcClass:[LeeLotteryViewController class]];
     
     [section.items addObjectsFromArray:@[item0]];

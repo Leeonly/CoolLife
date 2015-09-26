@@ -12,7 +12,7 @@
 
 - (void)awakeFromNib {
     // Initialization code
-    self.backgroundColor = LeeColor(63, 176, 141);
+    self.backgroundColor = LeeColor(77,129,215);
 }
 
 @end

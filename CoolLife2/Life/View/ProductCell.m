@@ -20,7 +20,7 @@
 {
     self.iconImage.layer.cornerRadius = 8;
     self.iconImage.clipsToBounds = YES;
-    self.backgroundColor = LeeCollectionBkgCollor;//KLColor(231, 231, 231);
+    self.backgroundColor = LeeCollectionBkgCollor;//LeeColor(231, 231, 231);
 }
 
 - (id)initWithFrame:(CGRect)frame
