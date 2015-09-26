@@ -1,18 +1,18 @@
 //
-//  LeeWeatherViewController.m
+//  AboutViewController.m
 //  CoolLife2
 //
-//  Created by Leon on 15/9/22.
+//  Created by Leon on 15/9/26.
 //  Copyright (c) 2015年 Leon. All rights reserved.
 //
 
-#import "LeeWeatherViewController.h"
+#import "AboutViewController.h"
 
-@interface LeeWeatherViewController ()
+@interface AboutViewController ()
 
 @end
 
-@implementation LeeWeatherViewController
+@implementation AboutViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

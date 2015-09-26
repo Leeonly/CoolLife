@@ -71,7 +71,7 @@
         </view>
     </objects>
     <resources>
-        <image name="weather_default_bg" width="320" height="504"/>
-        <image name="晴" width="320" height="504"/>
+        <image name="weather_default_bg" width="320" height="480"/>
+        <image name="晴" width="128" height="128"/>
     </resources>
 </document>

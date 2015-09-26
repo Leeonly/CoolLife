@@ -129,7 +129,7 @@
         stringValue = metadataObject.stringValue;
     }
     
-    NSLog(@" %@",stringValue);
+    LeeLog(@" %@",stringValue);
     
     if (self.qrUrlBlock) {
         self.qrUrlBlock(stringValue);

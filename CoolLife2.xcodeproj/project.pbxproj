@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3553284C1BB55ADB0002B639 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3553284B1BB55ADB0002B639 /* libz.dylib */; };
+		3553284E1BB55AEA0002B639 /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3553284D1BB55AEA0002B639 /* libstdc++.6.0.9.dylib */; };
+		355328501BB55B060002B639 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3553284F1BB55B060002B639 /* SystemConfiguration.framework */; };
+		355328521BB55B210002B639 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 355328511BB55B210002B639 /* Foundation.framework */; };
+		355328541BB55B2D0002B639 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 355328531BB55B2D0002B639 /* UIKit.framework */; };
 		35540C8E1BB10BE4003F8D5E /* NSString+TG.m in Sources */ = {isa = PBXBuildFile; fileRef = 35540C8D1BB10BE4003F8D5E /* NSString+TG.m */; };
 		35540DF11BB1126A003F8D5E /* RETableViewBoolCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 35540DA11BB1126A003F8D5E /* RETableViewBoolCell.m */; };
 		35540DF21BB1126A003F8D5E /* RETableViewCreditCardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 35540DA31BB1126A003F8D5E /* RETableViewCreditCardCell.m */; };
@@ -56,6 +61,8 @@
 		35540E2E1BB11C20003F8D5E /* REPresenceValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 35540E261BB11C20003F8D5E /* REPresenceValidator.m */; };
 		35540E2F1BB11C20003F8D5E /* REURLValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 35540E281BB11C20003F8D5E /* REURLValidator.m */; };
 		35540EBA1BB13D6F003F8D5E /* LeeGroupBuyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35540EB91BB13D6F003F8D5E /* LeeGroupBuyController.m */; };
+		3556ABBE1BB635E20044433C /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3556ABBC1BB635E20044433C /* AboutViewController.m */; };
+		3556ABBF1BB635E20044433C /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3556ABBD1BB635E20044433C /* AboutViewController.xib */; };
 		3579A8591BB41E3200120F46 /* QRItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3579A8541BB41E3200120F46 /* QRItem.m */; };
 		3579A85A1BB41E3200120F46 /* QRMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 3579A8561BB41E3200120F46 /* QRMenu.m */; };
 		3579A85B1BB41E3200120F46 /* QRView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3579A8581BB41E3200120F46 /* QRView.m */; };
@@ -121,8 +128,6 @@
 		357FA8ED1BB161B5009C239C /* LeeSearchHttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 357FA8CC1BB161B5009C239C /* LeeSearchHttpTool.m */; };
 		357FA8EE1BB161B5009C239C /* HeaderViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 357FA8CF1BB161B5009C239C /* HeaderViewCell.m */; };
 		357FA8EF1BB161B5009C239C /* HeaderViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 357FA8D01BB161B5009C239C /* HeaderViewCell.xib */; };
-		357FA8F01BB161B5009C239C /* LeeWeatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 357FA8D21BB161B5009C239C /* LeeWeatherViewController.m */; };
-		357FA8F11BB161B5009C239C /* LeeWeatherViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 357FA8D31BB161B5009C239C /* LeeWeatherViewController.xib */; };
 		357FA8F21BB161B5009C239C /* ProductCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 357FA8D51BB161B5009C239C /* ProductCell.m */; };
 		357FA8F31BB161B5009C239C /* ProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 357FA8D61BB161B5009C239C /* ProductCell.xib */; };
 		357FA8F41BB161B5009C239C /* SimpleWeatherView.m in Sources */ = {isa = PBXBuildFile; fileRef = 357FA8D81BB161B5009C239C /* SimpleWeatherView.m */; };
@@ -199,6 +204,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3553284B1BB55ADB0002B639 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		3553284D1BB55AEA0002B639 /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "usr/lib/libstdc++.6.0.9.dylib"; sourceTree = SDKROOT; };
+		3553284F1BB55B060002B639 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		355328511BB55B210002B639 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		355328531BB55B2D0002B639 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		35540C8C1BB10BE4003F8D5E /* NSString+TG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+TG.h"; sourceTree = "<group>"; };
 		35540C8D1BB10BE4003F8D5E /* NSString+TG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+TG.m"; sourceTree = "<group>"; };
 		35540DA01BB1126A003F8D5E /* RETableViewBoolCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RETableViewBoolCell.h; sourceTree = "<group>"; };
@@ -296,6 +306,9 @@
 		35540E281BB11C20003F8D5E /* REURLValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REURLValidator.m; sourceTree = "<group>"; };
 		35540EB81BB13D6F003F8D5E /* LeeGroupBuyController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeeGroupBuyController.h; sourceTree = "<group>"; };
 		35540EB91BB13D6F003F8D5E /* LeeGroupBuyController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeeGroupBuyController.m; sourceTree = "<group>"; };
+		3556ABBB1BB635E20044433C /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		3556ABBC1BB635E20044433C /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		3556ABBD1BB635E20044433C /* AboutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutViewController.xib; sourceTree = "<group>"; };
 		3579A8531BB41E3200120F46 /* QRItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRItem.h; sourceTree = "<group>"; };
 		3579A8541BB41E3200120F46 /* QRItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRItem.m; sourceTree = "<group>"; };
 		3579A8551BB41E3200120F46 /* QRMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRMenu.h; sourceTree = "<group>"; };
@@ -424,9 +437,6 @@
 		357FA8CE1BB161B5009C239C /* HeaderViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderViewCell.h; sourceTree = "<group>"; };
 		357FA8CF1BB161B5009C239C /* HeaderViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderViewCell.m; sourceTree = "<group>"; };
 		357FA8D01BB161B5009C239C /* HeaderViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderViewCell.xib; sourceTree = "<group>"; };
-		357FA8D11BB161B5009C239C /* LeeWeatherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeeWeatherViewController.h; sourceTree = "<group>"; };
-		357FA8D21BB161B5009C239C /* LeeWeatherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeeWeatherViewController.m; sourceTree = "<group>"; };
-		357FA8D31BB161B5009C239C /* LeeWeatherViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeeWeatherViewController.xib; sourceTree = "<group>"; };
 		357FA8D41BB161B5009C239C /* ProductCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductCell.h; sourceTree = "<group>"; };
 		357FA8D51BB161B5009C239C /* ProductCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductCell.m; sourceTree = "<group>"; };
 		357FA8D61BB161B5009C239C /* ProductCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductCell.xib; sourceTree = "<group>"; };
@@ -550,6 +560,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				355328541BB55B2D0002B639 /* UIKit.framework in Frameworks */,
+				355328521BB55B210002B639 /* Foundation.framework in Frameworks */,
+				355328501BB55B060002B639 /* SystemConfiguration.framework in Frameworks */,
+				3553284E1BB55AEA0002B639 /* libstdc++.6.0.9.dylib in Frameworks */,
+				3553284C1BB55ADB0002B639 /* libz.dylib in Frameworks */,
 				35F201F71BB5148A00408511 /* MessageUI.framework in Frameworks */,
 				35F201F51BB5148100408511 /* MapKit.framework in Frameworks */,
 				35F201F31BB5147700408511 /* CoreLocation.framework in Frameworks */,
@@ -979,9 +994,6 @@
 				357FA8CE1BB161B5009C239C /* HeaderViewCell.h */,
 				357FA8CF1BB161B5009C239C /* HeaderViewCell.m */,
 				357FA8D01BB161B5009C239C /* HeaderViewCell.xib */,
-				357FA8D11BB161B5009C239C /* LeeWeatherViewController.h */,
-				357FA8D21BB161B5009C239C /* LeeWeatherViewController.m */,
-				357FA8D31BB161B5009C239C /* LeeWeatherViewController.xib */,
 				357FA8D41BB161B5009C239C /* ProductCell.h */,
 				357FA8D51BB161B5009C239C /* ProductCell.m */,
 				357FA8D61BB161B5009C239C /* ProductCell.xib */,
@@ -999,7 +1011,6 @@
 			isa = PBXGroup;
 			children = (
 				357FA8F91BB16304009C239C /* Controller */,
-				357FA8FE1BB16304009C239C /* Model */,
 				357FA8FF1BB16304009C239C /* View */,
 			);
 			path = Main;
@@ -1020,7 +1031,8 @@
 			isa = PBXGroup;
 			children = (
 			);
-			path = Model;
+			name = Model;
+			path = Main/Model;
 			sourceTree = "<group>";
 		};
 		357FA8FF1BB16304009C239C /* View */ = {
@@ -1039,12 +1051,17 @@
 		3582DAFB1BAED1BB0084DE84 = {
 			isa = PBXGroup;
 			children = (
-				35F201F61BB5148A00408511 /* MessageUI.framework */,
-				35F201F41BB5148100408511 /* MapKit.framework */,
-				35F201F21BB5147700408511 /* CoreLocation.framework */,
 				3582DB061BAED1BB0084DE84 /* CoolLife2 */,
 				3582DB201BAED1BB0084DE84 /* CoolLife2Tests */,
 				3582DB051BAED1BB0084DE84 /* Products */,
+				355328531BB55B2D0002B639 /* UIKit.framework */,
+				355328511BB55B210002B639 /* Foundation.framework */,
+				3553284F1BB55B060002B639 /* SystemConfiguration.framework */,
+				3553284D1BB55AEA0002B639 /* libstdc++.6.0.9.dylib */,
+				3553284B1BB55ADB0002B639 /* libz.dylib */,
+				35F201F61BB5148A00408511 /* MessageUI.framework */,
+				35F201F41BB5148100408511 /* MapKit.framework */,
+				35F201F21BB5147700408511 /* CoreLocation.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1062,6 +1079,7 @@
 			children = (
 				357FA8F81BB16304009C239C /* Main */,
 				357FA8A61BB161B5009C239C /* Life */,
+				357FA8FE1BB16304009C239C /* Model */,
 				35540EB71BB13D6F003F8D5E /* GroupBuy */,
 				3582DB401BAED3BE0084DE84 /* Extention */,
 				3582DB301BAED36B0084DE84 /* More */,
@@ -1107,6 +1125,9 @@
 			children = (
 				357B8C3B1BAFCDBE00A62449 /* LeeMoreViewController.h */,
 				357B8C3C1BAFCDBE00A62449 /* LeeMoreViewController.m */,
+				3556ABBB1BB635E20044433C /* AboutViewController.h */,
+				3556ABBC1BB635E20044433C /* AboutViewController.m */,
+				3556ABBD1BB635E20044433C /* AboutViewController.xib */,
 			);
 			path = More;
 			sourceTree = "<group>";
@@ -1385,7 +1406,6 @@
 				357B89DD1BAFB1C200A62449 /* MJRefresh.bundle in Resources */,
 				357FA8F51BB161B5009C239C /* SimpleWeatherView.xib in Resources */,
 				357B89A01BAFB0EA00A62449 /* MBProgressHUD.bundle in Resources */,
-				357FA8F11BB161B5009C239C /* LeeWeatherViewController.xib in Resources */,
 				357FA8EF1BB161B5009C239C /* HeaderViewCell.xib in Resources */,
 				35540E151BB1126A003F8D5E /* RETableViewManager.bundle in Resources */,
 				3582DB3E1BAED36B0084DE84 /* ProvincesAndCities.plist in Resources */,
@@ -1395,6 +1415,7 @@
 				3582DB151BAED1BB0084DE84 /* Images.xcassets in Resources */,
 				3582DB3B1BAED36B0084DE84 /* Cities.plist in Resources */,
 				357FA8F71BB161B5009C239C /* TopHeaderViewCell.xib in Resources */,
+				3556ABBF1BB635E20044433C /* AboutViewController.xib in Resources */,
 				357FA8E91BB161B5009C239C /* WeatherViewController.xib in Resources */,
 				3582DB3D1BAED36B0084DE84 /* Orders.plist in Resources */,
 			);
@@ -1424,7 +1445,6 @@
 				35540DFD1BB1126A003F8D5E /* MultilineTextCell.m in Sources */,
 				35F06A5F1BAED68D00218BA8 /* UIView+WebCacheOperation.m in Sources */,
 				35540E001BB1126A003F8D5E /* WBSubtitleItem.m in Sources */,
-				357FA8F01BB161B5009C239C /* LeeWeatherViewController.m in Sources */,
 				35540E161BB1126A003F8D5E /* RETableViewManager.m in Sources */,
 				357B8C241BAFBD9600A62449 /* UIBarButtonItem+Extension.m in Sources */,
 				35F202051BB515B200408511 /* REMenuContainerView.m in Sources */,
@@ -1543,6 +1563,7 @@
 				357B89D71BAFB1C200A62449 /* MJRefreshBackGifFooter.m in Sources */,
 				357B89D01BAFB1C200A62449 /* MJRefreshBackFooter.m in Sources */,
 				357B89CF1BAFB1C200A62449 /* MJRefreshAutoFooter.m in Sources */,
+				3556ABBE1BB635E20044433C /* AboutViewController.m in Sources */,
 				35540E0A1BB1126A003F8D5E /* REPickerItem.m in Sources */,
 				35540DF71BB1126A003F8D5E /* RETableViewLongTextCell.m in Sources */,
 				357FA8F61BB161B5009C239C /* TopHeaderViewCell.m in Sources */,
@@ -1615,6 +1636,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/**";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -1630,10 +1652,17 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)/**",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/**";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)";
 			};
 			name = Debug;
 		};
@@ -1659,6 +1688,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/**";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -1667,9 +1697,16 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)/**",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/**";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -1677,26 +1714,64 @@
 		3582DB281BAED1BB0084DE84 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)",
+					"$(inherited)",
+				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/CoolLife2/CoolLife-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
 				INFOPLIST_FILE = CoolLife2/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/**",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				"LIBRARY_SEARCH_PATHS[arch=*]" = "$(PROJECT_DIR)/**";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC.",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)";
 			};
 			name = Debug;
 		};
 		3582DB291BAED1BB0084DE84 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)",
+					"$(inherited)",
+				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/CoolLife2/CoolLife-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
 				INFOPLIST_FILE = CoolLife2/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/**",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				"LIBRARY_SEARCH_PATHS[arch=*]" = "$(PROJECT_DIR)/**";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC.",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)";
 			};
 			name = Release;
 		};

@@ -57,7 +57,7 @@ static NSString * const reuseTopHeaderIdentifier = @"TopHeaderViewCell";
     
     self.collectionView.backgroundColor = LeeCollectionBkgCollor;//LeeColor(231, 231, 231);
     
-    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithTarget:self action:@selector(secondCode) image:@"2dcode" highImage:nil];
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithTarget:self action:@selector(secondCode) image:@"navigationbar_pop" highImage:nil];
     
     self.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithTarget:self action:@selector(selectCity) image:@"ios7_top_navigation_locationicon" highImage:nil];
     
@@ -162,7 +162,7 @@ static NSString * const reuseTopHeaderIdentifier = @"TopHeaderViewCell";
         // 设置weatherView
         self.weatherCell.weatherInfo = _weatherInfo;
     } failure:^(NSError *error) {
-        NSLog(@"加载天气失败!");
+        LeeLog(@"加载天气失败!");
     }];
     
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];

@@ -87,8 +87,8 @@
     // 设置垂直间距
     layout.minimumLineSpacing = 10;
     layout.sectionInset = UIEdgeInsetsMake(10, 0, 0, 0);
-    layout.parallaxHeaderReferenceSize = CGSizeMake(self.view.frame.size.width, 170);
-    layout.headerReferenceSize = CGSizeMake(200, 50);
+    layout.parallaxHeaderReferenceSize = CGSizeMake(self.view.frame.size.width, 35);
+    layout.headerReferenceSize = CGSizeMake(200, 30);
     
     ProductController *life = [[ProductController alloc] initWithCollectionViewLayout:layout];
 //    ProductCollectionController *life = [[ProductCollectionController alloc]initWithCollectionViewLayout:layout];
@@ -105,7 +105,7 @@
 //    LeeGroupBuyController *discover = [[LeeGroupBuyController alloc] init];
 
     TestViewController *discover = [[TestViewController alloc] init];
-    [self addChildVc:discover title:@"团购" image:@"tabbar_discover" selectedImage:@"tabbar_discover_selected"];
+    [self addChildVc:discover title:@"周边" image:@"tabbar_discover" selectedImage:@"tabbar_discover_selected"];
     
     // 更多控制器
     LeeMoreViewController *more = [[LeeMoreViewController alloc] init];

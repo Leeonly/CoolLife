@@ -191,7 +191,7 @@
             break;
     }
     
-    NSLog(@"%f",taxhand);
+    LeeLog(@"%f",taxhand);
     
     __typeof (self) __weak weakSelf = self;
     

@@ -11,7 +11,7 @@
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>D09D02EC9FF05F619E72D99D1FE2D1D56E6B50AC</key>
-		<string>https://github.com/Leeonly/CoolLife</string>
+		<string>https://github.com/Leeonly/CoolLife.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>CoolLife2.xcodeproj</string>
@@ -21,7 +21,7 @@
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/Leeonly/CoolLife</string>
+	<string>https://github.com/Leeonly/CoolLife.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
@@ -34,7 +34,7 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>D09D02EC9FF05F619E72D99D1FE2D1D56E6B50AC</string>
 			<key>IDESourceControlWCCName</key>
-			<string>CoolLife4</string>
+			<string>CoolLife5%E5%89%AF%E6%9C%AC</string>
 		</dict>
 	</array>
 </dict>

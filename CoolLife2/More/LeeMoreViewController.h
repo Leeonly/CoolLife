@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class LeeWeatherInfo;
 @interface LeeMoreViewController : UITableViewController
-
+@property (nonatomic, strong) LeeWeatherInfo *weatherInfo;
 @end
